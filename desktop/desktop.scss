@@ -1,0 +1,43 @@
+.landing {
+  @include breakpoint(large) {
+    background-image: initial;
+    
+    .container {
+      flex-flow: wrap;
+      padding: 2rem;
+      margin-bottom: 0;
+      
+      .text-container {
+        padding: 0 0 4rem 0;
+      }
+      
+      .form-container {
+        
+        form {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-height: 700px) {
+    .container {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.image-container {
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  header {
+    .notice {
+      display: none;
+    }
+  }
+}

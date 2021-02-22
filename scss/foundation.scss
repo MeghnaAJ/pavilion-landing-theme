@@ -1,0 +1,57 @@
+body.landing-page {
+  background-image: url("https://pavilion-assets.nyc3.digitaloceanspaces.com/landing/people-background.png");
+  background-size: 100% auto;
+  background-color: $background-color;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100vw;
+  
+  header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $background-color;
+    max-width: 100vw;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .primary-text {
+    font-size: 2.7em;
+    margin: 0.5em 0 1em 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    span {
+      position: relative;
+    }
+  }
+
+  .secondary-text {
+    font-size: 1.3em;
+    line-height: 40px;
+  }
+
+  .footer-left a {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,111 @@
+.page.support-options {
+  background-position: left bottom;
+  flex-direction: column;
+  background-color: $landing-light-pink;
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 80%;
+    
+    .section {
+      flex: 1;
+      
+      &.first {
+        margin-right: 2em;
+      }
+    
+      &.second {
+        border-right: 1px solid $tertiary;
+        border-left: 1px solid $tertiary;
+      }
+      
+      &.coming-soon {
+        opacity: 0.3;
+        
+        .title {
+          h2 {
+            margin-right: 10px;
+          }
+          
+          i {
+            line-height: 30px;
+          }
+        }
+        
+        .price span {
+          background-image: none;
+        }
+      }
+      
+      .title {
+        padding: 2em 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        
+        h3 {
+          font-size: 1.6em;
+          margin: 0;
+        }
+        
+        .btn-primary {
+          margin-left: 20px;
+        }
+      }
+
+      .description {
+        margin: 1em 0 2em 0;
+        font-size: 1.3em;
+        height: 60px;
+        box-sizing: border-box;
+      }
+      
+      .features {
+        font-size: 1.3em;
+        
+        h4 {
+          margin-block-start: 0;
+          padding: 0;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0;
+          
+          li {
+            border-top: 1px solid $tertiary;
+            padding: 2em 0;
+            height: 9em;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+              
+            label {
+              display: block;
+            }
+            
+            .platform-shortlist {
+              margin-top: 1em;
+            }
+          }
+        }
+      }
+      
+      .price {
+        margin: 30px;
+        
+        a {
+          display: inline-block;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

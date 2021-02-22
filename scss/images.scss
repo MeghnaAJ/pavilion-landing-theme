@@ -1,0 +1,67 @@
+.image {
+  &.discourse {
+    background-image: url($discourse);
+  }
+  &.discourse-large {
+    background-image: url($discourse-large);
+  }
+  &.wordpress {
+    background-image: url($wordpress);
+  }
+  &.wordpress-large {
+    background-image: url($wordpress-large);
+  }
+  &.auth0 {
+    background-image: url($auth0);
+  }
+  &.auth0-large {
+    background-image: url($auth0-large);
+  }
+  &.shopify {
+    background-image: url($shopify);
+  }
+  &.shopify-large {
+    background-image: url($shopify-large);
+  }
+  &.discord {
+    background-image: url($discord);
+  }
+  &.discord-large {
+    background-image: url($discord-large);
+  }
+  &.something-else {
+    background-image: url($question-mark);
+  }
+}
+
+.lottie {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  
+  &.title,
+  &.contact {
+    height: 200px;
+  }
+  
+  &.scene {
+    width: 600px;
+  }
+  
+  &.scene.shakuro {
+    width: 700px;
+  }
+  
+  &.scene.small {
+    transform: scale(1.1);
+  }
+  
+  &.scene.medium {
+    transform: scale(1.2);
+  }
+  
+  &.scene.large {
+    transform: scale(1.5);
+  }
+}

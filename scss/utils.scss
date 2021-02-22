@@ -1,0 +1,81 @@
+.anchor-buffer::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes up-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: right;    
+  }
+}
+
+@mixin puzzle-piece-container {
+  -webkit-filter: drop-shadow($item-shadow);
+  filter: drop-shadow($item-shadow);
+  position: relative;
+}
+
+@mixin puzzle-piece($color, $piece) {
+  display: block;
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  pointer-events: none;
+  width: 500px;
+  height: 350px;
+  mask-image: url($piece);
+  -webkit-mask-image: url($piece);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background: $color;
+}
