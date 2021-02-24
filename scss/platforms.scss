@@ -27,6 +27,8 @@
   width: 100%;
   position: absolute;
   height: inherit;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .platform-puzzle {
