@@ -284,6 +284,10 @@ body.landing-page {
   &.members #member-list {
     padding: 0 0 1.5em 0;
     
+    .title {
+      align-items: flex-start;
+    }
+    
     .item-list-toggle {
       justify-content: flex-start;
       
