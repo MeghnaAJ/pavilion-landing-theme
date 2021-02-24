@@ -316,6 +316,15 @@ body.landing-page {
       
       .user-top {
         flex-direction: column;
+        
+        .user-profile {
+          align-items: flex-start;
+          
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
       }
       
       .top-extra {
