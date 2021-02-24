@@ -212,6 +212,8 @@ body.landing-page {
       width: 100%;
       left: unset;
       position: relative;
+      overflow: hidden;
+      padding: 7em 0;
       
       li.puzzle-piece-2 .puzzle-piece {
         transform: translateY(-50px) translateX(-30px) rotate(270deg);
