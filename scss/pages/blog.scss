@@ -15,36 +15,36 @@ body.blog {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   
-  // .controls {
-  //   position: fixed;
-  //   z-index: 2;
-  //   bottom: 20px;
-  //   display: flex;
-  //   align-items: center;
+  .controls {
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
     
-  //   &.right {
-  //     right: 20px;
+    &.right {
+      right: 20px;
       
-  //     .btn {
-  //       margin-left: 10px;
-  //     }
-  //   }
+      .btn {
+        margin-left: 10px;
+      }
+    }
     
-  //   &.left {
-  //     left: 20px;
+    &.left {
+      left: 20px;
       
-  //     .btn {
-  //       margin-right: 10px;
-  //     }
-  //   }
+      .btn {
+        margin-right: 10px;
+      }
+    }
     
-  //   .btn {
-  //     svg {
-  //       height: 10px;
-  //       width: 10px;
-  //     }
-  //   }
-  // }
+    .btn {
+      svg {
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
   
   // .article-list {
   //   flex: 1 1 auto;
