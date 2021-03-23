@@ -1,0 +1,16 @@
+body.join .scene-container {
+  height: 500px;
+}
+
+#membership {
+  overflow: hidden;
+  
+  .scene-container {
+    height: 700px;
+    
+    .lottie.scene {
+      width: 800px;
+      transform: translate(-175px, 0) scale(1.4);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.product {
+  flex-direction: column;
+  
+  .container {
+    align-items: flex-start;
+    box-shadow: $item-shadow;
+    background-color: $secondary;
+    margin: 1em 0 0 0;
+    border-top: 1px solid $primary-low;
+    border-radius: 4px;
+    padding: 3.5em 4em;
+    width: 90vw;
+    max-width: 1110px;
+  }
+  
+  .main-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    background-image: linear-gradient(180deg, transparent 97%, $tertiary 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    .image-container {
+      width: 300px;
+      margin-right: 2em;
+    }
+    
+    .image {
+      height: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    .product-link {
+      font-size: 1rem;
+      color: $tertiary;
+      
+      .d-icon {
+        height: 13px;
+        width: 13px;
+        margin-right: 3px;
+        fill: $tertiary;
+      }
+    }
+  }
+  
+  .main-description {
+    max-width: 800px;
+    
+    p {
+      line-height: 1.5em;
+    }
+  }
+  
+  .section {
+    margin: 1em 0;
+  }
+  
+  .section > .title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    background-image: linear-gradient(180deg, transparent 95%, $tertiary 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: $primary;
+    display: inline-block;
+  }
+  
+  ul.item-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 0;
+    
+    .item {
+      max-width: 400px;
+    }
+    
+    .item-image {
+      img {
+        max-width: 100%;
+      }
+    }
+    
+    .item-description {
+      line-height: 1.5em;
+    }
+  }
+}
