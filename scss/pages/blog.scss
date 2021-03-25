@@ -17,17 +17,15 @@ body.blog {
   
   body.landing-page header {
     background-color: transparent;
-  }
-  body.landing-page header.landing-header {
-    height: 3em;
-  }
-
-  body.landing-page header.landing-header .contents {
-    padding: 0em;
-  }
-
-  body.landing-page .primary-item .primary-item-link {
-    color: #fff;
+    .landing-header {
+      height: 3em;
+      .contents {
+        padding: 0em;
+      }
+    }
+    .primary-item .primary-item-link {
+      color: #fff;
+    }
   }
   
   .controls {
