@@ -15,16 +15,14 @@ body.blog {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
   
-  body.landing-page header {
+  .landing-header {
     background-color: transparent;
-    .landing-header {
-      height: 3em;
-      .contents {
-        padding: 0em;
+    height: 3em;
+    .contents {
+      padding: 0em;
+      .primary-item .primary-item-link {
+        color: #fff;
       }
-    }
-    .primary-item .primary-item-link {
-      color: #fff;
     }
   }
   
