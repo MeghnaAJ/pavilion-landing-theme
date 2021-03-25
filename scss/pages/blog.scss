@@ -254,6 +254,8 @@ body.landing-page .user-top img {
   }
 }
 
+// Banner
+
 .site-header-cover {
   position: absolute;
   top: 0;
@@ -292,4 +294,43 @@ body.landing-page .user-top img {
   max-height: 340px;
   text-align: center;
   color: #fff;
+}
+
+// Subscribe
+
+.gh-portal-triggerbtn-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  opacity: 1;
+  transition: transform 0.16s linear 0s;
+  opacity: 0.08s linear 0s;
+  user-select: none;
+  line-height: 1;
+  padding: 10px 28px 0 17px;
+}
+
+.gh-portal-triggerbtn-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brandcolor);
+  height: 60px;
+  min-width: 60px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 8px 16px -2px;
+  border-radius: 999px;
+  transition: opacity 0.3s ease;
+}
+
+.gh-portal-triggerbtn-label {
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  display: block;
+  white-space: nowrap;
+  max-width: 380px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
