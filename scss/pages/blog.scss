@@ -23,21 +23,11 @@ body.blog {
       padding: 1em 5em 0;
       .primary-item .primary-item-link .svg-icon {
         fill: #fff;
+        color: #fff;
       }
     }
   }
-
-  body.landing-page:not(.menu-visible).scrolled header.landing-header, body.landing-page:not(.menu-visible) header.landing-header:hover {
-    border-bottom: none;
-  }
-
-  body.landing-page.scrolled header.landing-header, body.landing-page.menu-visible header.landing-header, body.landing-page header.landing-header:hover {
-    background-color: transparent;
-  }
-  
-  body.landing-page.scrolled header.landing-header {
-    box-shadow: none;
-  }
+   
   .controls {
     position: fixed;
     z-index: 2;
@@ -68,6 +58,18 @@ body.blog {
       }
     }
   }
+}
+
+body.landing-page:not(.menu-visible).scrolled header.landing-header, body.landing-page:not(.menu-visible) header.landing-header:hover {
+  border-bottom: none;
+}
+
+body.landing-page.scrolled header.landing-header, body.landing-page.menu-visible header.landing-header, body.landing-page header.landing-header:hover {
+  background-color: transparent;
+}
+
+body.landing-page.scrolled header.landing-header {
+  box-shadow: none;
 }
 
 /* 6. Post Feed
