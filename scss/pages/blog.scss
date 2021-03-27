@@ -18,12 +18,10 @@ body.blog {
   .landing-header {
     background-color: transparent;
     height: 3em;
-    position: absolute;
     .contents {
       padding: 1em 5em 0;
       .primary-item .primary-item-link .svg-icon {
         fill: #fff;
-        color: #fff;
       }
     }
   }
@@ -70,6 +68,15 @@ body.landing-page.scrolled header.landing-header, body.landing-page.menu-visible
 
 body.landing-page.scrolled header.landing-header {
   box-shadow: none;
+}
+
+body.landing-page header.landing-header {
+  height: 3em;
+  position: absolute;
+}
+
+body.landing-page header.landing-header .contents {
+  padding: 1em 5em 0;
 }
 
 /* 6. Post Feed
