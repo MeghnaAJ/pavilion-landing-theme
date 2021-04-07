@@ -1,0 +1,124 @@
+@import "common/base/topic-post";
+
+body.blog-post {
+  background-image: unset;
+  
+  li {
+    line-height: 1.6em;
+  }
+
+  blockquote {
+    border-left: 5px solid #e6e6e6;
+    padding-left: 12px;
+    font-style: italic;
+  }
+
+  code, pre {
+    color: #434343;
+    background: #f8f8f8;
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  }
+
+  img.emoji {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  .title {
+    color: #0a0b0c;
+    padding: 2.5em 0 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    margin: 0 0 0.4em;
+    text-align: center;
+  }
+
+  .topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0 50px 0;
+  }
+
+  .excerpt {
+    color: #60757e;
+    margin: 0px 0px 0px 0px;
+    align-self: center;
+  }
+
+  .canvas {
+    display: flex;
+    flex-direction: column;
+
+    .lightbox-wrapper {
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  .article-byline {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .topic-byline {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    .bull {
+      opacity: 0.6;
+      padding: 0 0 0 5px;
+      line-height: 2.0em;
+    }
+
+    .date {
+      line-height: 1.9em;
+      font-size: 13px;
+    }
+
+    .author-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: center;
+
+      .user-name {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .author-list-item {
+    position: relative;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topic-meta {
+    color: #738a94;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    padding-bottom: 5px;
+  }
+
+  .content {
+    width: 60%;
+    word-spacing: 4px;
+  }
+
+  .user-top img {
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 650px) {
+    .content {
+      width: 85%;
+    }
+  }
+}
