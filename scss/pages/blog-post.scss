@@ -8,59 +8,56 @@ body.blog-post {
   }
 
   blockquote {
-    border-left: 5px solid #e6e6e6;
-    padding-left: 12px;
+    padding: 12px;
     font-style: italic;
+    border-left: 5px solid $primary-low;
+    background-color: $blend-primary-secondary-5;
   }
 
   code, pre {
-    color: #434343;
-    background: #f8f8f8;
-    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+    color: $primary-very-high;
+    background: $primary-very-low;
   }
 
   img.emoji {
-    width: 20px;
-    height: 20px;
+    width: 1.3em;
+    height: 1.3em;
     vertical-align: middle;
   }
 
   .title {
-    color: #0a0b0c;
+    color: $primary;
     padding: 2.5em 0 0;
     font-size: 3.5rem;
     font-weight: 700;
     letter-spacing: -.015em;
     margin: 0 0 0.4em;
-    text-align: center;
   }
 
   .topic {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 0 50px 0;
+    padding: 0.312em 0 3.125em 0;
   }
 
   .excerpt {
-    color: #60757e;
-    margin: 0px 0px 0px 0px;
-    align-self: center;
+    color: $primary-high;
+    margin: 0 0 0 0;
   }
 
   .canvas {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    width: 60em;
 
     .lightbox-wrapper {
-      display: flex;
       align-self: center;
     }
   }
 
   .article-byline {
-    display: flex;
-    justify-content: space-between;
     align-self: center;
   }
 
@@ -71,13 +68,13 @@ body.blog-post {
 
     .bull {
       opacity: 0.6;
-      padding: 0 0 0 5px;
+      padding: 0 0 0 0.312em;
       line-height: 2.0em;
     }
 
     .date {
       line-height: 1.9em;
-      font-size: 13px;
+      font-size: 0.612em;
     }
 
     .author-list {
@@ -100,19 +97,18 @@ body.blog-post {
   }
 
   .topic-meta {
-    color: #738a94;
+    color: $primary-medium;
     font-size: 1.4rem;
     line-height: 1.2em;
-    padding-bottom: 5px;
+    padding-bottom: 0.312em;
   }
 
   .content {
-    width: 60%;
-    word-spacing: 4px;
+    word-spacing: 0.25em;
   }
 
   .user-top img {
-    margin-right: 5px;
+    margin-right: 0.312em;
     border-radius: 50%;
   }
 

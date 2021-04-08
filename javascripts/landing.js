@@ -83,19 +83,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $articleList.find('li:last-of-type a').click();
     params.delete('last');
   }
-
-  $blog.find("div.subscribe").on('click', function(e) {
-    $(".subscribe-modal").addClass("active");
-  });
-
-  // When the user clicks on <span> (x), close the modal
-  $blog.find("span.subscribe-modal-close").on('click', function(e) {
-    $(".subscribe-modal").removeClass("active");
-  });
-
-  // $(".subscribe-modal").on('click', function(e) {
-  //   if (e.target == $("div.subscribe-modal.active")) {
-  //     $(".subscribe-modal").removeClass("active");
-  //   }
-  // });
 });
