@@ -53,6 +53,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }, 400);
   });
 
+  var $memberList = $('#member-list');
+  var $toggleList = $memberList.find('.item-list-toggle');
+  var $itemList = $memberList.find('.item-list');
+
+  function handleGroupToggle(group) {
+    if (group && group !== 'everyone') {
+      $itemList.find(`.item:not(.${group})`).removeClass("show");
+      $itemList.find(`.item.${group}`).addClass("show");
+    } else {
+      $itemList.find('.item').addClass('show');
+    }
+  }
+
+  handleGroupToggle(window.location.hash.replace(/^#/, ''));
+
+  $memberList.find('a.toggle').on("click", function(e) {
+    $toggleList.find('.toggle').removeClass('active');
+    $(e.target).addClass('active');
+    handleGroupToggle(e.target.getAttribute("data-group"));
+  });
+
+  // Blog
   var $blog = $('body.blog');
   var $articleList = $blog.find(".article-list");
 
