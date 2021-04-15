@@ -11,7 +11,7 @@ function getElementOffset(el) {
   } else {
     offset = elOffset;
   }
-  
+
   return offset;
 }
 
@@ -35,7 +35,7 @@ function getCurrentPage(params) {
 function goToPage(page, goToLast=false) {
   var params = getParams();
   params.set("page", page);
-  
+
   if (goToLast) {
     params.set('last', true);
   }
@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }, 400);
   });
 
-  var $blog = $('body.blog');
+  var $blog = $('body.blog, body.blog-post');
   var $articleList = $blog.find(".article-list");
 
   $blog.find("a.page-first").on('click', function(event) {
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       goToPage(Math.max(0, getCurrentPage() - 1), true);
     } else {
       $articleList.find('li.active').prev().find('a').click();
-    }  
+    }
   });
 
   $blog.find("a.page-next").on('click', function(event) {
@@ -83,4 +83,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $articleList.find('li:last-of-type a').click();
     params.delete('last');
   }
+
+  $blog.find("div.subscribe").on('click', function(e) {
+    if ($(this).hasClass('user')) {
+      $(".subscribe-modal").addClass("active");
+    } else {
+      window.location.href = 'https://thepavilion.io/login'
+    }
+  });
+
+  // When the user clicks on <div> (x), close the modal
+  $blog.find("div.subscribe-modal-close").on('click', function(e) {
+    $(".subscribe-modal").removeClass("active");
+  });
+
+  // When the user clicks on cancel link, close the modal
+  $blog.find("a.subscribe-cancel-link").on('click', function(e) {
+    $(".subscribe-modal").removeClass("active");
+  });
 });
