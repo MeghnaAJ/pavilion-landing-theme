@@ -240,7 +240,7 @@ body.blog {
   align-items: center;
   right: 1.75em;
   box-shadow: shadow("card");
-  border-radius: 2em;
+  border-radius: 3em;
   background: $tertiary;
   padding: 0.6em;
   cursor: pointer;
@@ -293,12 +293,19 @@ body.blog {
   }
 
   .subscribe-icon {
+    display: flex;
+    align-items: center;
+
     svg {
-      width: 2.0em;
-      height: 2.3em;
+      width: 35px;
+      height: 35px;
       fill: $secondary;
-      padding-right: 6px;
     }
+  }
+
+  .subscribe-icon,
+  .subscribe-avatar {
+    margin-right: .5em;
   }
 }
 
@@ -321,12 +328,13 @@ body.blog {
 
   .subscribe-modal-content {
     background: $primary-very-low;
-    padding: 1.5em;
+    padding: 2em;
     position: relative;
     margin: auto;
     box-shadow: shadow("modal");
     border-radius: 0.3em;
-    min-width: 18.75em;
+    width: 30em;
+    max-width: 90%;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -335,9 +343,11 @@ body.blog {
     .subscribe-modal-close {
       cursor: pointer;
       fill: $primary-low-mid;
+
       svg {
         height: 1em;
         width: 1em;
+
         &:hover,
         &:focus {
           text-decoration: none;
@@ -356,10 +366,12 @@ body.blog {
     .subscribe-buttons {
       padding-top: 0.6em;
       border-top: 0.06em solid $primary-low;
+
       .btn-subscribe {
         padding: 9px 13px;
         border: 1px solid $primary-low;
         transition: 0.7s;
+
         &:hover,
         &:focus {
           color: $secondary;
@@ -388,7 +400,8 @@ body.blog {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      h3 {
+
+      .subscribe-title {
         margin: 0;
       }
     }
