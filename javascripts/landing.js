@@ -92,13 +92,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 
-  // When the user clicks on <div> (x), close the modal
-  $blog.find("div.subscribe-modal-close").on('click', function(e) {
-    $(".subscribe-modal").removeClass("active");
-  });
-
-  // When the user clicks on cancel link, close the modal
-  $blog.find("a.subscribe-cancel-link").on('click', function(e) {
+  $blog.find(".subscribe-modal-close, .subscribe-cancel-link").on('click', function(e) {
     $(".subscribe-modal").removeClass("active");
   });
 });
